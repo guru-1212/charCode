@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{
+            font-size: 100px;
+            color: red;
+            font-weight: bold;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        button{
+            height: 50px;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: green;
+            color: whitesmoke;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body >
+    <button onclick="clickhere()">click here to get char code</button>
+    <h1 id="char"></h1>
+    <script>
+        // var a = "Apple"
+        var b = document.getElementById("char");
+       
+        // document.write(a.charAt(0));
+        // document.write(a.charAt(1));
+        // document.write(a.charAt(2));
+        // document.write(a.charAt(3));
+        // document.write(a.charAt(4));
+        function clickhere(){
+        var x = prompt("Enter a character to get its code");
+        b.innerHTML= x +"= " + x.charCodeAt();
+    }
+    </script>
+</body>
+</html>
